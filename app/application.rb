@@ -22,6 +22,7 @@ class Application
       add_item = req.params["item"]
       @@items.include?(add_item)
         @@cart << add_item
+      end
     else
       resp.write "Path Not Found"
     end
