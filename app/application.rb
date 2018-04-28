@@ -23,7 +23,7 @@ class Application
       if @@items.include?(add_item)
         @@cart << add_item
       else
-        resp.write "Item Not Found"
+        resp.write "Your cart is empty"
       end
     else
       resp.write "Path Not Found"
